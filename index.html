@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>WebApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://kit.fontawesome.com/3cf01b33c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="basis active" id="basis-main">
+        <div class="search-bar">
+            <i class = "search-bar__phone-img fa fa-phone-square"></i>
+            <i class="search-bar__search-img fa-solid fa-magnifying-glass"></i>
+            <input class="search-bar__input" id="search-bar__input">
+        </div>
+        <div class="main-section" id="main-section"></div>
+        <div class="add-section">
+            <button class="add-section__btn" id="add-section__btn">Add</button>
+        </div>
+    </div>
+    
+    <div class="basis" id="basis-add">
+        <div class="head-section">
+            <span class="head-section__contact-text">Add contact</span>
+        </div>
+        <div class="add-main-section">
+            <form class="add-main-section-form" id="add-main-section-form">
+                <span class="add-main-section__text">Name</span>
+                <input class="add-main-section__input" id="add-main-section__input" required>
+                <span class="add-main-section__text">Phone</span>
+                <input class="add-main-section__input" id="add-main-section__phone" required>
+                <div class="add-main-section__fav-div">
+                    <input type="checkbox" class="add-main-section__favorite-check" id="add-main-section__favorite-check">
+                    <label for="main-section__favorite-check" class="add-main-section__favorite-text">Favorites</label>
+                </div>
+            </form>
+        </div>
+        <div class="confirm-section">
+            <button class="confirm-section__btn" id="confirm-section__btn" type="submit" form="add-main-section-form">Create</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

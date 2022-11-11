@@ -1,0 +1,236 @@
+body {
+  display: block;
+  scroll-behavior: smooth;
+  background-color: rgb(218, 218, 218);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.basis {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  margin: 100px auto;
+  width: 400px;
+  background-color: #444444;
+  position: fixed;
+  opacity: 0;
+  z-index: 0;
+  top: 0;
+  pointer-events: none;
+}
+.basis.active {
+  position: relative;
+  opacity: 100;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.search-bar {
+  display: flex;
+  height: 13%;
+  border: solid 1px black;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar__phone-img {
+  height: auto;
+  scale: 3;
+  margin-left: 30px;
+  margin-right: 30px;
+  
+}
+.search-bar__input {
+  height: 40%;
+  width: 240px;
+  margin: auto 20px auto -40px;
+  border: solid 1px black;
+  background-color: #686868;
+  border-radius: 20px;
+  padding-left:40px;
+  font-size: 20px;
+  justify-content: center;
+}
+.search-bar__search-img{
+  height: auto;
+
+  margin-left: 20px;
+  border-radius: 7px;
+  background-color: #686868;
+  z-index: 1;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 74%;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+  padding: 0;
+}
+
+.add-section{
+  display: flex;
+  height: 16%;
+  border: solid 1px black;
+
+}
+.add-section__btn{
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Roboto-Medium';
+  background-color:  #777777;
+  border: none;
+  transition: 0.1s all ease-in-out;
+}
+.add-section__btn:hover {
+  background-color: #5f5f5f;
+}
+
+.head-section {
+  display: flex  ;
+  height: 13%;
+  border: solid 1px black;
+  justify-content: left;
+  align-items: center;
+}
+
+.head-section__contact-text {
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 34px;
+}
+
+.add-main-section{
+  height: 74%;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+}
+
+.add-main-section-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding-left: 37px;
+  padding-top: 15px;
+}
+.add-main-section__text{
+  font-size: 16px;
+  margin-bottom: 3px;
+  color: #ffffff;
+}
+
+.add-main-section__input{
+  width: 320px;
+  height: 30px;
+  margin-left: -37px;
+  background-color: #686868;
+  align-self: center;
+  padding-left: 5px;
+  margin-bottom: 30px;
+  font-size: 18px;
+
+  
+}
+
+.add-main-section__input:invalid{
+  border: 1px solid rgb(190, 190, 190);;
+}
+
+.add-main-section__fav-div{
+  display: inline;
+  align-items: center;
+}
+
+.add-main-section__favorite-check{
+ scale: 1.5;
+ margin-right: 10px;
+}
+.add-main-section__favorite-text{
+  font-size: 15px;
+  color: #ffffff;
+  width: 10px;
+}
+
+.confirm-section{
+  display: flex;
+  height: 16%;
+  border: solid 1px black;
+}
+
+.confirm-section__btn{
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  font-family: 'Roboto-Medium';
+  background-color: #777777;
+  border: none;
+  transition: 0.1s all ease-in-out;
+}
+.confirm-section__btn:hover {
+  background-color: #5f5f5f;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  height: 22%;
+  background-color: #686868;
+  border-bottom: solid 1px #a0a0a0;
+  align-items: center;
+  justify-content: left;
+}
+.item__icon {
+  height: 80%;
+  width: 18%;
+  padding: 2px;
+  background-color: #c2c2c2;
+  margin-left: 15px;
+}
+.item__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 64%;
+}
+.item__text-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.item__text-phone {
+  font-size: 18px;
+}
+.item__btn {
+  display: flex;
+  height: 70%;
+  width: 10%;
+  flex-direction: column;
+}
+.item__btn-delete {
+  height: auto;
+  border: 0;
+  padding: 0;
+  background-color: #686868;
+  margin-bottom: 15px;
+}
+.item__btn-delete-icon {
+  font-size: 21px;
+}
+.item__btn-favorite {
+  height: auto;
+  border: 0;
+  padding: 0;
+  background-color: #686868;
+}
+.item__btn-favorite-icon {
+  font-size: 16px;
+}
